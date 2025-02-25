@@ -22,7 +22,7 @@ app.MapGet("/hello",()=>{
     return "Get Method";
 });
 
-app.MapPost("/hello",()=>{
+app.MapPost("/helloPost",()=>{
     return "POST Method";
 });
 
