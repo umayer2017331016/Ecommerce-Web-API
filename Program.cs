@@ -14,5 +14,20 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapGet("/",()=>{
+    return "Web API Project is running";
+});
+
+app.MapGet("/hello",()=>{
+    return "Get Method";
+});
+
+app.MapPost("/hello",()=>{
+    return "POST Method";
+});
+
+app.MapPut("/hello",()=>{
+    return "PUT Method";
+});
 
 app.Run();
