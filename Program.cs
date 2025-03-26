@@ -17,12 +17,12 @@ if(app.Environment.IsDevelopment()){
 
 app.UseHttpsRedirection();
 
-app.MapGet("/",()=>{
-    return "Web API Project is running";
-});
+app.MapGet("/",()=> "Web API Project is running");
 
 app.MapGet("/hello",()=>{
-    return "Get Method";
+    var response = new {message ="This ia json object",
+    success=true};
+    return response;
 });
 
 app.MapPost("/helloPost",()=>{
